@@ -12,7 +12,7 @@ def brain_prime():
         i = 2
         correct_answer = 'yes'
         while i <= math.sqrt(a):
-            if a % i == 0:
+            if a % i == 0 or a == 0 or a == 1:
                 correct_answer = 'no'
             i += 1
         test1 = prompt.string(f'Question: {a}\nYour answer: ')
