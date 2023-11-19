@@ -8,10 +8,10 @@ def brain_progression():
     print('What number is missing in the progression?')
     counter = 0
     while counter < 3:
-        a, b = random.randint(0, 10), random.randint(1, 6)
+        a, b = random.randint(0, 10), random.randint(3, 6)
         d = random.randint(50, 70)
         progression = list(range(a, d, b))
-        c = random.randint(0,len(progression))
+        c = random.randint(0,len(progression) - 1)
         correct_answer = str(progression[c])
         progression[c] = '..'
         proverka = ' '.join(map(str, progression))
