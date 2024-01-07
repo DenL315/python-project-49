@@ -3,19 +3,34 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/edb7e042d81efe3c42cc/maintainability)](https://codeclimate.com/github/DenL315/python-project-49/maintainability)
 
 «Игры разума» — набор из пяти консольных игр, построенных по принципу популярных мобильных приложений для прокачки мозга. Каждая игра задает вопросы, на которые нужно дать правильные ответы. После трех правильных ответов считается, что игра пройдена. Неправильные ответы завершают игру и предлагают пройти ее заново. Игры:
-- Калькулятор. Арифметические выражения, которые необходимо вычислить;
-- Прогрессия. Поиск пропущенных чисел в последовательности чисел;
-- Определение четного числа;
-- Определение наибольшего общего делителя;
-- Определение простого числа.
+1. Калькулятор. Арифметические выражения, которые необходимо вычислить.
+Запуск командой: Brain-calc
+<a href="https://asciinema.org/a/FoPHtOxa8Sws5aQAuI2KW2ieT" target="_blank"><img src="https://asciinema.org/a/FoPHtOxa8Sws5aQAuI2KW2ieT.svg" /></a>
+2. Определение четного числа.
+Запуск командой: Brain-even
+<a href="https://asciinema.org/a/Ihtbc3Huhm3l62Ws6mNO57Sgr" target="_blank"><img src="https://asciinema.org/a/Ihtbc3Huhm3l62Ws6mNO57Sgr.svg" /></a>
+3. Определение наибольшего общего делителя. 
+Запуск командой: Brain-gcd
+<a href="https://asciinema.org/a/aThUX7cxPOdcDbAodXSCtqzAf" target="_blank"><img src="https://asciinema.org/a/aThUX7cxPOdcDbAodXSCtqzAf.svg" /></a>
+4. Определение простого числа.
+Запуск командой: Brain-prime
+<a href="https://asciinema.org/a/88bcARkvuMXVJYjP66RdZIjwb" target="_blank"><img src="https://asciinema.org/a/88bcARkvuMXVJYjP66RdZIjwb.svg" /></a>
+5. Прогрессия. Поиск пропущенных чисел в последовательности.
+Запуск командой: Brain-progression
+<a href="https://asciinema.org/a/CybPbJSk7AdM5ZwYbrIZHCjwr" target="_blank"><img src="https://asciinema.org/a/CybPbJSk7AdM5ZwYbrIZHCjwr.svg" /></a>
 
-1. Brain-calc
-https://asciinema.org/connect/9b6c44b7-0d52-417f-bd21-98283ae9f5a1
-2. Brain-even
-https://asciinema.org/a/Ihtbc3Huhm3l62Ws6mNO57Sgr
-3. Brain-gcd
-https://asciinema.org/a/aThUX7cxPOdcDbAodXSCtqzAf
-4. Brain-prime
-https://asciinema.org/a/88bcARkvuMXVJYjP66RdZIjwb
-5. Brain-progression
-https://asciinema.org/a/CybPbJSk7AdM5ZwYbrIZHCjwr
+Инструкция по установке игр:
+1. Скопируйте данный репозиторий на локальный компьютер: git@github.com:DenL315/python-project-49.git
+2. Выполнить следующие команды:
+ - make install
+ - make build
+ - make package-install
+
+Системные требования для работы игр:
+CPython: не ниже 3.10;
+prompt:  не ниже 0.4.1;
+poetry:  не ниже 1.7.1;
+flake8:  не ниже 6.1.0.
+
+Для проверки кода на наличие ошибок, проблем со стилем и сложностью необходимо выполнить команду:
+ - make lint.

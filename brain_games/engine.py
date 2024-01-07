@@ -1,12 +1,12 @@
 import prompt
-WIN = 3
+ROUND_TO_WIN = 3
 
 
 def play(game):
     name = prompt.string('Welcome to the Brain Games!\nMay I have your name? ')
     print(f'Hello, {name}!')
     print(game.QUESTION)
-    for _ in range(WIN):
+    for _ in range(ROUND_TO_WIN):
         question, correct_answer = game.generate_task()
         print(f"Question: {question}")
         answer = prompt.string('Your answer: ')

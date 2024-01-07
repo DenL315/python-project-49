@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-
 def welcome_user():
     import prompt
     name = prompt.string('Welcome to the Brain Games!\nMay I have your name? ')
@@ -8,7 +6,3 @@ def welcome_user():
 
 def main():
     welcome_user()
-
-
-if __name__ == '__main__':
-    main()
