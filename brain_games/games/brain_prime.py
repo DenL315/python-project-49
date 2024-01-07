@@ -13,7 +13,7 @@ def generate_task():
     return question, correct_answer
 
 
-def is_prime(num)
+def is_prime(num):
     i = 2
     while i <= math.sqrt(num):
         if num % i == 0 or num == 0 or num == 1:
